@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Therapist Growth Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Therapist Growth</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-sm" href="index.html#join">Join Early Access</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact our team</h1>
+        <p>Tell us about your practice and goals. We’ll help you choose the right launch plan.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <article class="card">
+          <h2>Get in touch</h2>
+          <p>Email: hello@therapistgrowth.example</p>
+          <p>Hours: Monday–Friday, 9am–5pm ET</p>
+          <p>Response time: within one business day</p>
+        </article>
+        <article class="card">
+          <h2>Send a message</h2>
+          <form id="contact-form">
+            <label for="name">Name</label><br />
+            <input id="name" type="text" required /><br /><br />
+            <label for="contact-email">Email</label><br />
+            <input id="contact-email" type="email" required /><br /><br />
+            <label for="notes">What do you need help with?</label><br />
+            <textarea id="notes" required></textarea><br /><br />
+            <button type="submit" class="btn">Send message</button>
+          </form>
+          <p id="contact-message" class="form-message" aria-live="polite"></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© 2026 Therapist Growth Platform</p>
+      <div>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
