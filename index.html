@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Therapist Growth Platform — Founding Members</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .hero span {
+      color: #6366f1;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #64748b;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .email-box {
+      margin-top: 30px;
+    }
+
+    input {
+      padding: 14px;
+      width: 280px;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      font-size: 1rem;
+      margin-right: 10px;
+      outline: none;
+    }
+
+    button {
+      padding: 14px 22px;
+      border-radius: 10px;
+      border: none;
+      background: #6366f1;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover { background: #4f46e5; }
+
+    #success { margin-top: 10px; color: green; display: none; }
+
+    /* FEATURES CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .card h3 { margin-bottom: 10px; }
+    .card p { color: #64748b; }
+
+    /* HOW IT WORKS */
+    .steps { margin-top: 80px; text-align: center; }
+    .steps h2 { margin-bottom: 30px; }
+    .step-grid { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+    .step { max-width: 200px; }
+    .step-number {
+      background: #6366f1;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    /* FOOTER */
+    .footer { margin-top: 80px; text-align: center; color: #94a3b8; font-size: 0.9rem; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2.2rem; }
+      input { width: 100%; margin-bottom: 10px; }
+      button { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- HERO -->
+    <div class="hero">
+      <h1>
+        Join as a <span>Founding Therapist</span> — Get Your Website + Listing Free
+      </h1>
+      <p>
+        Limited to the first 100 therapists. Help shape the platform and get discovered by clients with your own professional website and directory listing.
+      </p>
+
+      <div class="email-box">
+        <form onsubmit="submitForm(event)">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Join the Founding Members</button>
+        </form>
+        <div id="success">You're on the list 🚀</div>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="grid">
+      <div class="card">
+        <h3>🌐 Professional Website</h3>
+        <p>Instantly generated and fully professional — no tech skills needed.</p>
+      </div>
+      <div class="card">
+        <h3>📍 Directory Listing</h3>
+        <p>Get found by clients in your area and grow your practice.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Easy Setup</h3>
+        <p>Sign up, set up your profile, and go live in minutes.</p>
+      </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <div class="steps">
+      <h2>How It Works</h2>
+      <div class="step-grid">
+        <div class="step">
+          <div class="step-number">1</div>
+          <p>Create your profile</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <p>We generate your website</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <p>Start getting clients</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      Exclusive Founding Member Offer • Limited Spots
+    </div>
+
+  </div>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      document.getElementById("success").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
